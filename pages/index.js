@@ -11,7 +11,7 @@ export default function Home({ data }) {
       <Container>
         <MainBanner />
         {data.map((index, id) => (
-          <div>{index.name}</div>
+          <div>{index.name}123</div>
         ))}
         <About />
       </Container>
