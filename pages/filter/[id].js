@@ -3,7 +3,7 @@ import Container from "../../components/Container";
 import styles from "../../styles/filter.module.css";
 import Link from "next/link";
 const prefix = "/cgu.github.io";
-function Filter() {
+export default function Filter() {
   return (
     <Layout position="2">
       <Container>
