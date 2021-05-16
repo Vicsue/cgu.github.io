@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <img src="/static/img_logo.png"></img>
+        <img src="/cgu.github.io/static/img_logo.png"></img>
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
