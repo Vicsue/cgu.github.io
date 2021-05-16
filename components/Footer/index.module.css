@@ -1,0 +1,97 @@
+.contact {
+  background-color: #4A3C2E;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  padding: 60px 80px 40px;
+  position: relative;
+}
+
+.ftlogo {
+  position: absolute;
+  height: auto;
+  top: 30px;
+}
+
+.contact .ftnav {
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0;
+  top: 100px;
+}
+
+.contact .ftnav div {
+  margin-right: 40px;
+}
+
+.contact .ftnav div:hover,
+.contact .ftnav div:active {
+  color: #E2B21A;
+}
+
+.contact .information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email {
+  font-size: 14px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 770px) {
+  .contact {
+    padding: 100px 20px 20px;
+  }
+
+  .ftlogo {
+    top: 50px;
+  }
+
+  .contact .ftnav {
+    width: 100vw;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact {
+    padding: 60px 20px 20px;
+  }
+
+  .ftlogo {
+    top: 30px;
+  }
+
+  .contact .ftnav {
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+
+  .contact .ftnav div {
+    margin: 5px 0;
+    width: 100vw;
+    text-align: left;
+  }
+
+  .contact .information {
+    flex-wrap: wrap;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .email {
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .copyright {
+    font-size: 12px;
+    line-height: 2;
+  }
+}

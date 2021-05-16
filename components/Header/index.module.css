@@ -1,0 +1,305 @@
+.header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  background: #F8F8F6;
+  padding: 2% 6%;
+  transition: padding-top .2s;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo img:first-of-type {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(83, 41, 0, 0.2);
+  width: 35vw;
+}
+
+.navbar>div {
+  width: 144px;
+  height: 24px;
+  justify-content: center;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+}
+
+.navbar>div>a {
+  font-weight: 300;
+  font-size: 16px;
+  color: #241200;
+}
+
+.navbar>div:hover>a,
+.navbar>div:active>a,
+.navbar>.pageActive>a {
+  font-weight: 500;
+  color: #532900;
+}
+
+.navbar>div:hover {
+  transition: 0.8s;
+  border-bottom: 3px solid #E2B21A;
+}
+
+.navbar>div:active,
+.navbar>.pageActive {
+  border-bottom: 3px solid #E2B21A;
+}
+
+.hamburger {
+  display: none;
+  z-index: 1;
+}
+
+.deco {
+  display: none;
+}
+
+.logoshake {
+  animation-name: logo-shake;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  margin-bottom: 6.78px;
+}
+
+.r {
+  display: none;
+}
+
+@keyframes logo-shake {
+  10% {
+    transform: rotate(10deg)
+  }
+
+  20% {
+    transform: rotate(-10deg)
+  }
+
+  30% {
+    transform: rotate(10deg)
+  }
+
+  40% {
+    transform: rotate(-10deg)
+  }
+
+  50% {
+    transform: rotate(10deg)
+  }
+
+  60% {
+    transform: rotate(-10deg)
+  }
+
+  70% {
+    transform: rotate(10deg)
+  }
+
+  80% {
+    transform: rotate(-10deg)
+  }
+
+  90% {
+    transform: rotate(10deg)
+  }
+
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar>div>a {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 2% 6%;
+  }
+
+  .container {
+    height: 70px;
+  }
+
+  .logo {
+    flex-direction: row;
+  }
+
+  .logo img:first-of-type {
+    height: 25px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .r {
+    display: flex;
+  }
+
+  .hambuger {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 25px;
+  }
+
+  .hambuger>span:first-child {
+    background-color: #532900;
+    height: 2px;
+    width: 100%;
+    margin: 3px 0;
+    border-radius: 20px;
+  }
+
+  .hambuger>span:last-child {
+    background-color: #532900;
+    height: 2px;
+    width: 70%;
+    margin: 3px 0;
+    border-radius: 20px;
+  }
+
+  .header.active {
+    display: relative;
+  }
+
+  .containerActive {
+    transition: 0.5s;
+    height: 100%;
+    background-color: #F8F8F6;
+    flex-wrap: wrap;
+    justify-content: unset;
+    align-items: flex-start;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 20px 20px;
+  }
+
+  .header.active .hambuger {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    height: 25px;
+  }
+
+  .header.active .hambuger>span {
+    background-color: #532900;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  .header.active .hambuger>span:first-child {
+    top: 10px;
+    transform: rotate(45deg);
+  }
+
+  .header.active .hambuger>span:last-child {
+    top: 10px;
+    transform: rotate(-45deg);
+    width: 100%;
+  }
+
+  .header.active .navbar {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border: none;
+
+  }
+
+  .header.active .navbar:first-of-type {
+    top: 25%;
+    left: 0;
+  }
+
+  .header.active .navbar:last-of-type {
+    top: 50%;
+    left: 0;
+  }
+
+  .header.active .navbar>div {
+    width: 100%;
+    margin: 15px 0;
+    border: none;
+  }
+
+  .header.active div a {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .header.active div a:active {
+    font-weight: 500;
+    border: none;
+  }
+
+  .header.active div a:active::after {
+    content: '';
+    display: block;
+    width: 40px;
+    margin: 2px auto 0;
+    border-top: 2px solid rgba(83, 41, 0, 0.2);
+  }
+
+  .header.active .deco {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    right: -10%;
+    bottom: -15%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    padding: 2% 6%;
+  }
+
+  .hambuger {
+    margin-right: 10px;
+  }
+
+  .logo img:first-of-type {
+    height: 36px;
+  }
+
+  .logoText {
+    height: 23px;
+    margin-left: 12px;
+  }
+}
