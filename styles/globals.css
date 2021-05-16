@@ -2,6 +2,8 @@
 
 html {
   position: relative;
+  scroll-behavior: smooth;
+
 }
 
 html,
@@ -44,90 +46,12 @@ address {
   font-style: normal;
 }
 
-
-
-.dotsProduct {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: absolute;
-  bottom: 21px;
-
-}
-
-.dotsProduct li {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  align-items: center;
-  margin: 6px;
-}
-
-.dotsProduct li button {
-  font-size: 0;
-  width: 10px;
-  height: 10px;
-  border: 0;
-  padding: 0;
-  border-radius: 50%;
-  cursor: pointer;
-  background: rgba(226, 178, 26, 0.5);
-}
-
-.dotsProduct li.slick-active button {
-  background-color: #E2B21A;
-}
-
-.dots {
-  width: 35%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.404);
-  position: absolute;
-  bottom: 33px;
-  right: 20px;
-  display: flex;
-  flex-direction: row;
-  border-radius: 10px;
-  padding: 0;
-  margin: 0;
-
-}
-
-.dots li {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style: none;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.dots li button {
-  padding: 0;
-  font-size: 0;
-  width: 100%;
-  border: 0;
-  border-radius: 10px;
-  height: 20px;
-  cursor: pointer;
-  background: transparent;
-}
-
-.dots li.slick-active button {
-  background-color: white;
-  height: 3px;
-
-}
-
 .slick-dots li button::before {
-  color: #532900;
+  color: #F4943B;
 }
 
 .slick-dots li.slick-active button::before {
-  color: #532900;
+  color: #F4943B;
   opacity: 1;
 }
 

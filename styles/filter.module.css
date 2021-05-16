@@ -1,0 +1,44 @@
+.container {}
+
+@media screen and (max-width: 768px) {
+  .recommend {
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+
+  }
+
+  .recommendContainer {
+    padding: 6% 0;
+  }
+
+  .recommend::after {
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    display: block;
+  }
+
+  .topContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 calc(2% + 10px);
+    align-items: flex-start;
+  }
+
+  .recommendContainer {
+    padding: 13% 0;
+  }
+
+  .recommend {
+    padding: 0 3%;
+  }
+
+  .recommend::after {
+    height: 25%;
+  }
+}

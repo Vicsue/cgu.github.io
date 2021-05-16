@@ -34,9 +34,9 @@ const Header = ({ position }) => {
         })}
       >
         <div className={styles.logo}>
-          <Link href="/" title="cgu">
+          <Link href="/" title="home">
             <div className={styles.logo}>
-              <img src="/static/CGU_Logo.png" alt="cgu" />
+              <img src="/static/CGU_Logo.png" alt="cgu-logo" />
               <hr></hr>
               <div className={styles.logoText}>校園八景</div>
             </div>
@@ -51,7 +51,7 @@ const Header = ({ position }) => {
             itemProp="name"
             className={position == 1 ? styles.pageActive : undefined}
           >
-            <Link href="/blog" title="首頁" itemProp="url">
+            <Link href="/" title="首頁" itemProp="url">
               {"首頁"}
             </Link>
           </div>
@@ -59,7 +59,7 @@ const Header = ({ position }) => {
             itemProp="name"
             className={position == 2 ? styles.pageActive : undefined}
           >
-            <Link href="/about" title="作品欣賞" itemProp="url">
+            <Link href="/filter" title="作品欣賞" itemProp="url">
               {"作品欣賞"}
             </Link>
           </div>
@@ -67,7 +67,11 @@ const Header = ({ position }) => {
             itemProp="name"
             className={position == 3 ? styles.pageActive : undefined}
           >
-            <Link href="/about" title="長庚大學首頁" itemProp="url">
+            <Link
+              href="https://www.cgu.edu.tw/"
+              title="長庚大學首頁"
+              itemProp="url"
+            >
               {"長庚大學首頁"}
             </Link>
           </div>
