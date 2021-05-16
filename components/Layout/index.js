@@ -25,12 +25,12 @@ export default function Layout({ children, position }) {
         <meta http-equiv="cache-control" content="no-cache" />
         <meta http-equiv="pragma" content="no-cache" />
         <meta http-equiv="expires" content="0" />
-        <meta name="author" content="Queenie Wang" />
+        <meta name="author" content="Vic Su" />
         <meta name="source" content="" />
-        <meta name="copyright" content="Copyright © GPE All rights reserved" />
+        <meta name="copyright" content="Copyright © CGU All rights reserved" />
         <meta
           name="description"
-          content="帶著這些問題，我們一起來審視好事交易。我們需要淘汰舊有的觀念，白居易曾說過一句意義深遠的話，試玉要燒三日滿，辨才須待七年期。"
+          content="承襲古典精神，將長庚寫入傳統。描繪校園景致，讓學子悠遊詩情。"
         />
         <meta name="keywords" content="" />
         <meta
@@ -43,16 +43,12 @@ export default function Layout({ children, position }) {
         <meta property="fb:app_id" content="" />
         <meta property="og:locale" content="" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="愛到叮"></meta>
-        <meta property="og:title" content="愛到叮" />
-        <meta property="og:url" content="http://idouding.cacdidemo.com/" />
-        <meta property="og:image" content="/static/img_logo.png" />
+        <meta property="og:site_name" content="長庚大學 校園八景"></meta>
+        <meta property="og:title" content="長庚大學 校園八景" />
         <meta
           property="og:description"
-          content="帶著這些問題，我們一起來審視好事交易。我們需要淘汰舊有的觀念，白居易曾說過一句意義深遠的話，試玉要燒三日滿，辨才須待七年期。"
+          content="承襲古典精神，將長庚寫入傳統。描繪校園景致，讓學子悠遊詩情。"
         />
-        <link rel="icon" type="image/gif" href="/static/img_logo.svg" />
-        <link rel="canonical" href="http://idouding.cacdidemo.com/" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css"
@@ -60,7 +56,7 @@ export default function Layout({ children, position }) {
           crossorigin="anonymous"
         />
 
-        <title>愛到叮-首頁</title>
+        <title>長庚大學 校園八景</title>
         <script
           type="text/javascript"
           src="https://platform-api.sharethis.com/js/sharethis.js#property=60865b6aca2f2c001800975f&product=inline-share-buttons"

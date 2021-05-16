@@ -1,15 +1,16 @@
 .contact {
-  background-color: #4A3C2E;
+  background: #5A7160;
   color: #fff;
   font-size: 16px;
   letter-spacing: 0.8px;
   font-weight: 400;
-  padding: 60px 80px 40px;
-  position: relative;
+  padding: 30px 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ftlogo {
-  position: absolute;
   height: auto;
   top: 30px;
 }
@@ -22,23 +23,7 @@
   top: 100px;
 }
 
-.contact .ftnav div {
-  margin-right: 40px;
-}
 
-.contact .ftnav div:hover,
-.contact .ftnav div:active {
-  color: #E2B21A;
-}
-
-.contact .information {
-  display: flex;
-  justify-content: space-between;
-}
-
-.email {
-  font-size: 14px;
-}
 
 .copyright {
   font-size: 14px;

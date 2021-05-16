@@ -7,6 +7,6 @@ module.exports = {
 
     return config;
   },
-  basePath: "/cgu.github.io",
-  assetPrefix: "/cgu.github.io",
+  //basePath: "/cgu.github.io",
+  //assetPrefix: "/cgu.github.io",
 };
