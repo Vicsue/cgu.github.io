@@ -27,7 +27,7 @@ const MainBanner = () => {
           描繪校園景致，讓學子悠遊詩情。
         </p>
         <a href="#A">
-          <img src={"${prefix}/static/readnore-icon.svg"}></img>
+          <img src={`${prefix}/static/readnore-icon.svg`}></img>
           <span>查看更多</span>
         </a>
       </div>
