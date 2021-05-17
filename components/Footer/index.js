@@ -7,7 +7,7 @@ export default function Footer() {
     <footer>
       <div className={styles.contact}>
         <div className={styles.ftlogo}>
-          <img src={prefix + "/static/footer-logo.svg"} alt="cgu-logo" />
+          <img src={"/static/footer-logo.svg"} alt="cgu-logo" />
         </div>
 
         <div className={styles.copyright}>

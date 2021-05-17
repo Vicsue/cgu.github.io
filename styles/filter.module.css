@@ -1,44 +1,67 @@
-.container {}
-
-@media screen and (max-width: 768px) {
-  .recommend {
-    padding: 0 20px;
-    position: relative;
-    z-index: 1;
-
-  }
-
-  .recommendContainer {
-    padding: 6% 0;
-  }
-
-  .recommend::after {
-    height: 40%;
-  }
+.container {
+  width: 100%;
+  display: flex;
+  height: 78vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 425px) {
-  .container {
-    display: block;
-  }
 
-  .topContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 0 calc(2% + 10px);
-    align-items: flex-start;
-  }
-
-  .recommendContainer {
-    padding: 13% 0;
-  }
-
-  .recommend {
-    padding: 0 3%;
-  }
-
-  .recommend::after {
-    height: 25%;
-  }
+.title {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  margin: 0 0 4% 0;
 }
+
+.options {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.btn {
+  text-align: center;
+  font-family: Noto Serif CJK TC;
+  font-size: 24px;
+  letter-spacing: 0.13em;
+  border: 1px solid #BCBCBC;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 15px 50px;
+  max-width: 298.57px;
+  width: calc(100%/3);
+  margin: 25px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5A7160;
+  color: white;
+  border: 1px solid #5A7160;
+}
+
+.back {
+  margin-top: 0.5%;
+  font-size: 21px;
+  color: #504F4F;
+  letter-spacing: 0.13em;
+  max-width: 207px;
+  border: 1px solid #BCBCBC;
+  border-radius: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-family: Noto Serif CJK TC;
+}
+
+.back:hover {
+  background-color: #fd9915;
+  color: white;
+  border: 1px solid #fd9915;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 425px) {}
