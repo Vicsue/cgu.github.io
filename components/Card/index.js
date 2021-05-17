@@ -1,6 +1,4 @@
 import styles from "./index.module.css";
-import Link from "next/link";
-import { useState, useEffect } from "react";
 const prefix = "/cgu.github.io";
 
 const Card = ({ data, active }) => {
