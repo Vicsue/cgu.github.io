@@ -1,9 +1,10 @@
 import styles from "./index.module.css";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+const prefix = "/cgu.github.io";
+
 const About = () => {
   const size = useWindowSize();
-
   return (
     <div className={styles.about} id="A">
       <div className={styles.container}>

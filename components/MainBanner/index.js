@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./index.module.css";
 import Slider from "react-slick";
+const prefix = "/cgu.github.io";
 
 const MainBanner = () => {
   const bannerList = [
@@ -26,7 +27,7 @@ const MainBanner = () => {
           描繪校園景致，讓學子悠遊詩情。
         </p>
         <a href="#A">
-          <img src="/static/readnore-icon.svg"></img>
+          <img src={prefix + "/static/readnore-icon.svg"}></img>
           <span>查看更多</span>
         </a>
       </div>
@@ -37,7 +38,9 @@ const MainBanner = () => {
               <div
                 className={styles.bannerContainer}
                 style={{
-                  background: `url(${index.img}) no-repeat center center / cover`,
+                  background: `url(${
+                    prefix + index.img
+                  }) no-repeat center center / cover`,
                 }}
               ></div>
             </div>

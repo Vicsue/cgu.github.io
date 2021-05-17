@@ -1,12 +1,13 @@
 import Link from "next/link";
 import styles from "./index.module.css";
+const prefix = "/cgu.github.io";
 
 export default function Footer() {
   return (
     <footer>
       <div className={styles.contact}>
         <div className={styles.ftlogo}>
-          <img src="/static/footer-logo.svg" alt="idouding" />
+          <img src={prefix + "/static/footer-logo.svg"} alt="cgu-logo" />
         </div>
 
         <div className={styles.copyright}>
