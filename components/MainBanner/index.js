@@ -38,7 +38,7 @@ const MainBanner = () => {
               <div
                 className={styles.bannerContainer}
                 style={{
-                  background: `url(${index.img}) no-repeat center center / cover`,
+                  background: `${prefix}url(${index.img}) no-repeat center center / cover`,
                 }}
               ></div>
             </div>

@@ -1,0 +1,67 @@
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2% 0;
+}
+
+.card,
+.cardActive {
+  width: 46%;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 3%;
+  margin: 1% 0.5%;
+}
+
+.card:nth-child(n + 3) {
+  display: none;
+}
+
+.text {
+  width: 60%;
+  z-index: 1;
+
+}
+
+.title {
+  font-size: 26px;
+  letter-spacing: 0.13em;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.poems {
+  font-size: 21px;
+  line-height: 180%;
+  font-family: Noto Serif CJK TC;
+}
+
+.info {
+  padding-top: 0.5rem;
+  font-size: 19px;
+  letter-spacing: 0.13em;
+  color: #5F5F5F;
+  font-family: Noto Serif CJK TC;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+}
+
+.bg {
+
+  background-color: rgb(170, 170, 170);
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:425px) {}

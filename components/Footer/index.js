@@ -7,11 +7,11 @@ export default function Footer() {
     <footer>
       <div className={styles.contact}>
         <div className={styles.ftlogo}>
-          <img src={"/static/footer-logo.svg"} alt="cgu-logo" />
+          <img src={`${prefix}/static/footer-logo.svg`} alt="cgu-logo" />
         </div>
 
         <div className={styles.copyright}>
-          Copyright © 2021 長庚大學. All rights reserved.{" "}
+          Copyright © 2021 長庚大學. All rights reserved.
         </div>
       </div>
     </footer>

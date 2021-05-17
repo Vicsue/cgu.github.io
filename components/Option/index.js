@@ -78,35 +78,35 @@ const Option = ({ category, dataList, getData }) => {
   const yearList = [
     {
       id: 1,
-      value: "102學年度",
+      value: 102,
     },
     {
       id: 2,
-      value: "103學年度",
+      value: 103,
     },
     {
       id: 3,
-      value: "104學年度",
+      value: 104,
     },
     {
       id: 4,
-      value: "105學年度",
+      value: 105,
     },
     {
       id: 5,
-      value: "106學年度",
+      value: 106,
     },
     {
       id: 6,
-      value: "107學年度",
+      value: 107,
     },
     {
       id: 7,
-      value: "108學年度",
+      value: 108,
     },
     {
       id: 8,
-      value: "109學年度",
+      value: 109,
     },
   ];
   let data = [];
@@ -120,7 +120,10 @@ const Option = ({ category, dataList, getData }) => {
   let sum = 0;
   for (let i = 0; i < data.length; i++) {
     for (let j = 0; j < dataList.length; j++) {
-      if (data[i].value == dataList[j].position) {
+      if (category == "position" && data[i].value == dataList[j].position) {
+        sum += 1;
+      }
+      if (category == "year" && data[i].value == dataList[j].year) {
         sum += 1;
       }
     }
@@ -133,7 +136,12 @@ const Option = ({ category, dataList, getData }) => {
   return (
     <div className={styles.Option} id="B">
       {list.map((index, id) => (
-        <Link href={{ pathname: "/poem/[id]", query: { id: `${index[0]}` } }}>
+        <Link
+          href={{
+            pathname: "/poem/[id]",
+            query: { id: `${index[0]}` },
+          }}
+        >
           <div className={active ? styles.Card : styles.CardActive}>
             <div className={styles.title}> {index[0]} </div>
             <div className={styles.amount}> {index[1]} </div>
@@ -142,13 +150,13 @@ const Option = ({ category, dataList, getData }) => {
       ))}
       <div
         className={styles.btn}
-        style={list.length < 9 ? { display: "none" } : undefined}
+        style={list.length < 9 || active ? { display: "none" } : undefined}
         onClick={(e) => {
           setActive(true);
           getData(true);
         }}
       >
-        <img src={"../static/readnore-icon.svg"}></img>
+        <img src={{ prefix } + "../static/readnore-icon.svg"}></img>
         <span>查看更多</span>
       </div>
     </div>
