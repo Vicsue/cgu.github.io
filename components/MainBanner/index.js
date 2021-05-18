@@ -5,8 +5,8 @@ const prefix = "/cgu.github.io";
 
 const MainBanner = () => {
   const bannerList = [
-    { id: "1", img: "/static/mainbanner-02.jpg" },
-    { id: "2", img: "/static/mainbanner-02.jpg" },
+    { id: "1", img: "/static/banner1.jpg" },
+    { id: "2", img: "/static/banner2.jpg" },
   ];
   const settings = {
     arrows: false,
