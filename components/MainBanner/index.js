@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import styles from "./index.module.css";
 import Slider from "react-slick";
 const prefix = "/cgu.github.io";
