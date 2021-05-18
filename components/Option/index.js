@@ -156,7 +156,7 @@ const Option = ({ category, dataList, getData }) => {
           getData(true);
         }}
       >
-        <img src={{ prefix } + "../static/readnore-icon.svg"}></img>
+        <img src={`${prefix}/static/readnore-icon.svg`}></img>
         <span>查看更多</span>
       </div>
     </div>
