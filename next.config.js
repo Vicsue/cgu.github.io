@@ -1,5 +1,5 @@
 module.exports = {
-  //basePath: '/cgu.github.io',
-  //assetPrefix: '/cgu.github.io',
-  assetPrefix: '',
+  basePath: '/cgu.github.io',
+  assetPrefix: '/cgu.github.io',
+  //assetPrefix: '',
 };
