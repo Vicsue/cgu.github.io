@@ -1,7 +1,9 @@
-const prod = process.env.NODE_ENV === 'production';
+const pathPrefix =
+  process.env.NODE_ENV === 'production' ? '/cgu.github.io' : '';
+
 module.exports = {
-  basePath: '/cgu.github.io',
-  assetPrefix: '/cgu.github.io',
-  //assetPrefix: '',
-  'process.env.BACKEND_URL': prod ? '/Next-React-Components' : '',
+  assetPrefix: pathPrefix,
+  env: {
+    pathPrefix,
+  },
 };

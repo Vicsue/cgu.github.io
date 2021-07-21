@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import Container from '../components/Container';
 import styles from '../styles/filter.module.css';
 import Link from 'next/link';
+import PrefixedLink from '../components/PrefixedLink';
 export default function Filter() {
   return (
     <Layout position="2">
@@ -9,17 +10,16 @@ export default function Filter() {
         <div className={styles.container}>
           <h1 className={styles.title}>請選擇篩選依據</h1>
           <div className={styles.options}>
-            <Link
+            <PrefixedLink
               href={{ pathname: '/filter/[id]', query: { id: 'year' } }}
-              as={process.env.BACKEND_URL + '/filter/year'}
             >
               <div className={styles.btn}>學年度</div>
-            </Link>
-            <Link
+            </PrefixedLink>
+            <PrefixedLink
               href={{ pathname: '/filter/[id]', query: { id: 'position' } }}
             >
               <div className={styles.btn}>地點清單</div>
-            </Link>
+            </PrefixedLink>
           </div>
         </div>
       </Container>
