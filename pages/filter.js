@@ -9,7 +9,10 @@ export default function Filter() {
         <div className={styles.container}>
           <h1 className={styles.title}>請選擇篩選依據</h1>
           <div className={styles.options}>
-            <Link href={{ pathname: '/filter/[id]', query: { id: 'year' } }}>
+            <Link
+              href={{ pathname: '/filter/[id]', query: { id: 'year' } }}
+              as={process.env.BACKEND_URL + '/filter/year'}
+            >
               <div className={styles.btn}>學年度</div>
             </Link>
             <Link
