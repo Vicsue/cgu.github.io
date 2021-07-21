@@ -3,7 +3,6 @@
 html {
   position: relative;
   scroll-behavior: smooth;
-
 }
 
 html,
@@ -14,7 +13,7 @@ body {
     "MingLiU", "sans-serif";
   background-color: #F4F0E9;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  height: 100%;
 }
 
 a {
@@ -26,6 +25,7 @@ a {
   box-sizing: border-box;
   outline: none;
 }
+
 
 footer {
   display: flex;

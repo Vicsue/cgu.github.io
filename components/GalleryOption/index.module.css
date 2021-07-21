@@ -1,0 +1,102 @@
+.Option {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 20%;
+}
+
+.Card,
+.CardActive {
+  width: calc((100% - 15%) / 3);
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  align-items: center;
+  display: flex;
+  border: 1px solid #BCBCBC;
+  border-radius: 10px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.CardActive:nth-child(n + 10) {
+  display: none;
+}
+
+.Card:hover,
+.CardActive:hover {
+  border: 1px solid #34563D;
+  background: #34563D;
+}
+
+.Card:hover .title,
+.CardActive:hover .title {
+  color: #F4F0E9;
+}
+
+.title {
+  font-family: Noto Serif CJK TC;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  color: #2E2E2E;
+  width: calc(100% - 35px);
+  text-align: center;
+}
+
+.Card:hover .amount,
+.CardActive:hover .amount {
+  color: #34563D;
+  background: #F4F0E9;
+}
+
+.amount {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #F4F0E9;
+  text-align: center;
+  background: #34563D;
+}
+
+.btn {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn img {
+  max-width: 38px;
+  margin-right: 5px;
+}
+
+.btn span {
+  font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+  .Option {
+    padding: 6%;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .amount {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .Option {
+    padding: 6%;
+  }
+}

@@ -52,9 +52,11 @@ export default function Layout({ children, position }) {
           async="async"
         ></script>
       </Head>
-      <Header position={position} />
-      <div className={styles.nav}></div>
-      {children}
+      <div className={styles.con}>
+        <Header position={position} />
+        <div className={styles.nav}></div>
+        {children}
+      </div>
       <Footer />
     </div>
   );

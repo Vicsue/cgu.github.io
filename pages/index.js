@@ -7,8 +7,9 @@ export default function Home() {
   return (
     <Layout position="1">
       <Container>
-        <MainBanner />
-        <About />
+        <div style={{ height: '100%' }}>
+          <MainBanner />
+        </div>
       </Container>
     </Layout>
   );

@@ -1,13 +1,77 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
 .MainBanner {
   width: 100%;
   padding: 0 10%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .banner {
-  width: 100%;
+  width: 50%;
+  max-width: 500px;
+}
+
+.about {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.quote {
+  padding-top: 60px;
+  font-family: Noto Serif CJK TC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 0.13em;
+  color: #34563D;
+}
+
+.content {
+  padding-top: 60px;
+  font-size: 18px;
+  line-height: 180%;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  letter-spacing: 0.13em;
+}
+
+.readMore {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  font-size: 20px;
+  letter-spacing: 0.13em;
+  text-align: center;
+  color: #34563D;
+  border: 1.5px solid #34563D;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.readMore:hover,
+.readMore:active {
+  color: #fff;
+  border: 1.5px solid #34563D;
+  background-color: #34563D;
 }
 
 @media screen and (max-width:768px) {

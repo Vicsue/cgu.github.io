@@ -37,15 +37,15 @@ const CustomSlide = ({
             {line3}
             {line4}
           </div>
-        </div>
-        <div className={styles.right}>
-          <a href={`/poem/${position}`}>
-            <p>{position}/</p>
-          </a>
-          <a href={`/poem/${year}`}>
-            <p>{year}學年度/</p>
-          </a>
-          <p>{author}</p>
+          <div className={styles.right}>
+            <a href={`/poem/${position}`}>
+              <p>{position}/</p>
+            </a>
+            <a href={`/poem/${year}`}>
+              <p>{year}學年度/</p>
+            </a>
+            <p>{author}</p>
+          </div>
         </div>
       </div>
     </div>

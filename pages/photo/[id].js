@@ -1,10 +1,10 @@
-import Layout from '../components/Layout';
-import Container from '../components/Container';
-import styles from '../styles/filter.module.css';
+import Layout from '../../components/Layout';
+import Container from '../../components/Container';
+import Card from '../../components/Card';
+import styles from '../../styles/photo.module.css';
 import { useRouter } from 'next/router';
-import Gallery from 'react-grid-gallery';
-import { useState, useEffect } from 'react';
-import GalleryOption from '../components/GalleryOption';
+import ImgsViewer from 'react-images-viewer';
+import { useState } from 'react';
 
 const prefix = '/cgu.github.io';
 export default function Photo() {
@@ -61,28 +61,63 @@ export default function Photo() {
     { id: '109-5', position: '志清湖', year: 109 },
     { id: '109-6', position: '志清湖', year: 109 },
   ];
-
+  let title = router.query.id;
+  for (let i = 102; i <= 109; i++) {
+    if (router.query.id == i) {
+      title += '學年度';
+    }
+  }
   let IMAGE = [];
   for (let x = 0; x < bannerList.length; x++) {
-    IMAGE.push({
-      src: `../static/banner/${bannerList[x].id}.jpg`,
-      thumbnail: `../static/banner/${bannerList[x].id}.jpg`,
-      thumbnailWidth: `320`,
-      thumbnailHeight: `212`,
-      caption: `${bannerList[x].position}  ${bannerList[x].year}`,
-    });
+    if (bannerList[x].year == router.query.id) {
+      IMAGE.push({
+        src: `/cgu.github.io/static/banner/${bannerList[x].id}.jpg`,
+        thumbnail: `/cgu.github.io/static/banner/${bannerList[x].id}.jpg`,
+        thumbnailWidth: `640`,
+        thumbnailHeight: `424`,
+        caption: `${bannerList[x].position}  ${bannerList[x].year}`,
+      });
+    }
   }
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [currImg, setCurrImg] = useState(0);
+
   return (
     <Layout position="2">
       <Container>
-        <div className={styles.container}>
-          <h1 className={styles.title}>請選擇學年度</h1>
-
-          <div
-            className={styles.options}
-            style={{ marginBottom: '9%', marginTop: '4%' }}
-          >
-            <GalleryOption dataList={bannerList} category={'year'} />
+        <div className={styles.poemContainer}>
+          <div className={styles.container}>
+            <div className={styles.titleContainer}>
+              <h1 className={styles.title}>{title}校園巡禮照片</h1>
+              <div className={styles.back} onClick={() => router.back()}>
+                返回上頁
+              </div>
+            </div>
+            <div className={styles.images}>
+              {IMAGE.map((index, id) => (
+                <img
+                  className={styles.image}
+                  src={index.src}
+                  alt="image"
+                  onClick={(e) => {
+                    setIsOpen(true);
+                    setCurrImg(id - 1);
+                  }}
+                />
+              ))}
+              <ImgsViewer
+                imgs={IMAGE}
+                currImg={currImg}
+                showThumbnails={true}
+                isOpen={isOpen}
+                onClickPrev={(e) => setCurrImg(currImg - 1)}
+                onClickNext={(e) => setCurrImg(currImg + 1)}
+                onClickThumbnail={(index) => setCurrImg(index)}
+                onClose={(e) => setIsOpen(false)}
+                backdropCloseable={true}
+              />
+            </div>
           </div>
         </div>
       </Container>
