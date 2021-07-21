@@ -1,6 +1,4 @@
-const pathPrefix =
-  process.env.NODE_ENV === 'production' ? '/cgu.github.io' : '';
-
+const pathPrefix = '/cgu.github.io';
 module.exports = {
   assetPrefix: pathPrefix,
   env: {
