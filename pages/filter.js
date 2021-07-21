@@ -10,14 +10,10 @@ export default function Filter() {
         <div className={styles.container}>
           <h1 className={styles.title}>請選擇篩選依據</h1>
           <div className={styles.options}>
-            <PrefixedLink
-              href={{ pathname: '/filter/[id]', query: { id: 'year' } }}
-            >
+            <PrefixedLink href="/filter/[id]" as="/filter/year">
               <div className={styles.btn}>學年度</div>
             </PrefixedLink>
-            <PrefixedLink
-              href={{ pathname: '/filter/[id]', query: { id: 'position' } }}
-            >
+            <PrefixedLink href="/filter/[id]" as="/filter/position">
               <div className={styles.btn}>地點清單</div>
             </PrefixedLink>
           </div>
