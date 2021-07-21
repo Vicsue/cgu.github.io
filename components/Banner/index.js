@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import styles from "./index.module.css";
-import Slider from "react-slick";
-const prefix = "/cgu.github.io";
+import styles from './index.module.css';
+import Slider from 'react-slick';
+import { funcImg } from '../Image/index.js';
+import CustomSlide from '../CustomSlide';
 
 const Banner = ({ bannerData }) => {
   const settings = {
@@ -19,14 +19,7 @@ const Banner = ({ bannerData }) => {
       <div className={styles.x}>
         <Slider {...settings}>
           {bannerData.map((index, id) => (
-            <div className={styles.banner}>
-              <div
-                className={styles.bannerContainer}
-                style={{
-                  background: `url(${prefix}/static/banner/${index.id}.JPG) no-repeat center center / cover`,
-                }}
-              ></div>
-            </div>
+            <CustomSlide key={id} />
           ))}
         </Slider>
       </div>

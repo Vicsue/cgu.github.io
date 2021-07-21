@@ -1,50 +1,113 @@
 .about {
   width: 100%;
-  padding: 0 10%;
-  height: 80vh;
+  padding: 100px 6% 0 6%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-.p1 {
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  color: #34563D;
   text-align: center;
-  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+
+.quote {
+  font-family: Noto Serif CJK TC;
+  margin-top: 50px;
+  max-width: 800px;
+  width: 100%;
+  padding: 40px 0;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 200%;
   letter-spacing: 0.13em;
-  line-height: 250%;
-  font-weight: 400;
-  color: #45584a;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 9px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.content {
+  padding-top: 50px;
+  font-size: 20px;
+  color: #343434;
+  line-height: 240%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.13em;
 }
 
 .readMore {
-  margin-top: 5%;
-  padding: 11px 80px;
+  margin-top: 30px;
+  margin-bottom: 100px;
   font-size: 20px;
-  border: 1px solid #203325;
-  box-sizing: border-box;
+  letter-spacing: 0.13em;
+  text-align: center;
+  color: #34563D;
+  border: 1.5px solid #34563D;
   border-radius: 10px;
+  padding: 10px;
+  width: 200px;
   cursor: pointer;
-  color: #203325;
 }
 
-.readMore:hover {
-  background: #5A7160;
-  color: #ffffff;
+.readMore:hover,
+.readMore:active {
+  color: #fff;
+  border: 1.5px solid #34563D;
+  background-color: #34563D;
 }
 
 @media screen and (max-width:768px) {
   .about {
-    height: auto;
-    margin: 25% 0;
+    padding-top: 80px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  .content {
+    font-size: 16px;
+  }
+
+  .readMore {
+    font-size: 18px;
+    margin-bottom: 70px;
   }
 }
 
 @media screen and (max-width:425px) {
+  .about {
+    padding-top: 60px;
+  }
 
-  .p1,
-  .readMore {
+  .title {
+    font-size: 30px;
+  }
+
+  .quote {
+    padding: 20px 0;
+    margin-top: 35px;
     font-size: 16px;
   }
 
+  .content {
+    font-size: 14px;
+    padding-top: 30px;
+  }
+
+  .readMore {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
 }

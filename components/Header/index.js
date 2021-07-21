@@ -1,25 +1,18 @@
-import { useState, useEffect } from "react";
-import classnames from "classnames";
-import Link from "next/link";
-import styles from "./index.module.css";
-const prefix = "/cgu.github.io";
+import { useState, useEffect } from 'react';
+import classnames from 'classnames';
+import Link from 'next/link';
+import styles from './index.module.css';
+//const prefix = '/cgu.github.io';
+const prefix = '';
 
 const Header = ({ position }) => {
   const [active, setactive] = useState(false);
-  let handleScroll = function () {
-    let headerClass = classnames(styles.header);
-    if (window.scrollY != 0) {
-      document.getElementsByClassName(headerClass)[0].style.padding = "0.8% 6%";
-    } else {
-      document.getElementsByClassName(headerClass)[0].style.padding = "2% 6%";
-    }
-  };
+
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
     if (active == false) {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto';
     } else {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     }
   });
 
@@ -53,7 +46,7 @@ const Header = ({ position }) => {
             className={position == 1 ? styles.pageActive : undefined}
           >
             <Link href="/" title="首頁" itemProp="url">
-              {"首頁"}
+              {'首頁'}
             </Link>
           </div>
           <div
@@ -61,20 +54,24 @@ const Header = ({ position }) => {
             className={position == 2 ? styles.pageActive : undefined}
           >
             <Link href="/filter" title="作品欣賞" itemProp="url">
-              {"作品欣賞"}
+              {'作品欣賞'}
             </Link>
           </div>
           <div
             itemProp="name"
             className={position == 3 ? styles.pageActive : undefined}
           >
-            <Link
-              href="https://www.cgu.edu.tw/"
-              title="長庚大學首頁"
-              itemProp="url"
-            >
-              {"長庚大學首頁"}
+            <Link href="/photo" title="校園巡禮" itemProp="url">
+              {'校園巡禮'}
             </Link>
+          </div>
+          <div
+            itemProp="name"
+            className={position == 4 ? styles.pageActive : undefined}
+          >
+            <a href="https://www.cgu.edu.tw/" target="_blank">
+              長庚大學
+            </a>
           </div>
         </nav>
         <div className={styles.r}>

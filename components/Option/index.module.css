@@ -81,6 +81,22 @@
   font-size: 20px;
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+  .Option {
+    padding: 6%;
+  }
 
-@media screen and (max-width:425px) {}
+  .title {
+    font-size: 16px;
+  }
+
+  .amount {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .Option {
+    padding: 6%;
+  }
+}

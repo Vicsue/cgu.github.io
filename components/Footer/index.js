@@ -1,7 +1,7 @@
-import Link from "next/link";
-import styles from "./index.module.css";
-const prefix = "/cgu.github.io";
-
+import Link from 'next/link';
+import styles from './index.module.css';
+//const prefix = '/cgu.github.io';
+const prefix = '';
 export default function Footer() {
   return (
     <footer>
@@ -9,7 +9,6 @@ export default function Footer() {
         <div className={styles.ftlogo}>
           <img src={`${prefix}/static/footer-logo.svg`} alt="cgu-logo" />
         </div>
-
         <div className={styles.copyright}>
           Copyright © 2021 長庚大學. All rights reserved.
         </div>

@@ -4,7 +4,7 @@
   font-size: 16px;
   letter-spacing: 0.8px;
   font-weight: 400;
-  padding: 30px 82px;
+  padding: 30px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,18 +15,9 @@
   top: 30px;
 }
 
-.contact .ftnav {
-  height: auto;
-  display: flex;
-  justify-content: flex-start;
-  margin: 20px 0;
-  top: 100px;
-}
-
-
-
 .copyright {
   font-size: 14px;
+  text-align: right;
 }
 
 @media screen and (max-width: 770px) {
@@ -38,9 +29,12 @@
     top: 50px;
   }
 
-  .contact .ftnav {
-    width: 100vw;
-    font-size: 14px;
+  .ftlogo>img {
+    height: 30px;
+  }
+
+  .copyright {
+    font-size: 12px;
   }
 }
 
@@ -49,34 +43,15 @@
     padding: 20px 20px 20px;
   }
 
+  .ftlogo>img {
+    height: 26px;
+  }
+
   .ftlogo {
     top: 30px;
   }
 
-  .contact .ftnav {
-    font-size: 14px;
-    flex-wrap: wrap;
-  }
-
-  .contact .ftnav div {
-    margin: 5px 0;
-    width: 100vw;
-    text-align: left;
-  }
-
-  .contact .information {
-    flex-wrap: wrap;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  .email {
-    font-size: 12px;
-    line-height: 2;
-  }
-
   .copyright {
-    font-size: 12px;
-    line-height: 2;
+    font-size: 10px;
   }
 }

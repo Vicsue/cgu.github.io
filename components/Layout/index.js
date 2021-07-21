@@ -1,22 +1,11 @@
-import Head from "next/head";
-import Header from "../Header";
-import Footer from "../Footer";
-import styles from "./index.module.css";
-import { useEffect } from "react";
-import classnames from "classnames";
+import Head from 'next/head';
+import Header from '../Header';
+import Footer from '../Footer';
+import styles from './index.module.css';
+import { useEffect } from 'react';
+import classnames from 'classnames';
 
 export default function Layout({ children, position }) {
-  let handleScroll = function () {
-    let navClass = classnames(styles.nav);
-    if (window.scrollY != 0) {
-      document.getElementsByClassName(navClass)[0].style.margin = "0.8% 0";
-    } else {
-      document.getElementsByClassName(navClass)[0].style.margin = "2% 0";
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
   return (
     <div>
       <Head>

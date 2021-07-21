@@ -46,6 +46,10 @@ address {
   font-style: normal;
 }
 
+.slick-dots {
+  bottom: -10%;
+}
+
 .slick-dots li button::before {
   color: #F4943B;
 }
@@ -55,18 +59,17 @@ address {
   opacity: 1;
 }
 
+.slick-active {
+  z-index: 999;
+}
 
 
 @media screen and (max-width:1440px) {}
 
-@media screen and (max-width:768px) {
-  .dots {
-    bottom: 24px;
-  }
-}
+@media screen and (max-width:768px) {}
 
 @media screen and (max-width:425px) {
-  .dots {
-    bottom: 17px;
+  .slick-dots {
+    bottom: -15%;
   }
 }

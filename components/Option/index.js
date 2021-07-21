@@ -1,78 +1,78 @@
-import styles from "./index.module.css";
-import Link from "next/link";
-import { useState, useEffect } from "react";
-const prefix = "/cgu.github.io";
-
+import styles from './index.module.css';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+//const prefix = '/cgu.github.io';
+const prefix = '';
 const Option = ({ category, dataList, getData }) => {
   const list = [];
   const positionList = [
     {
       id: 1,
-      value: "圖書館",
+      value: '圖書館',
     },
     {
       id: 2,
-      value: "操場",
+      value: '操場',
     },
     {
       id: 3,
-      value: "薄膜球場",
+      value: '薄膜球場',
     },
     {
       id: 4,
-      value: "明德樓",
+      value: '明德樓',
     },
     {
       id: 5,
-      value: "管理大樓",
+      value: '管理大樓',
     },
     {
       id: 6,
-      value: "木棧道",
+      value: '木棧道',
     },
     {
       id: 7,
-      value: "蘊德樓",
+      value: '蘊德樓',
     },
     {
       id: 8,
-      value: "志清湖",
+      value: '志清湖',
     },
     {
       id: 9,
-      value: "青蛙湖",
+      value: '青蛙湖',
     },
     {
       id: 10,
-      value: "創辦人紀念公園",
+      value: '創辦人紀念公園',
     },
     {
       id: 11,
-      value: "第二醫學大樓",
+      value: '第二醫學大樓',
     },
     {
       id: 12,
-      value: "文物館",
+      value: '文物館',
     },
     {
       id: 13,
-      value: "工學大樓",
+      value: '工學大樓',
     },
     {
       id: 14,
-      value: "好漢坡",
+      value: '好漢坡',
     },
     {
       id: 15,
-      value: "第一醫學大樓",
+      value: '第一醫學大樓',
     },
     {
       id: 16,
-      value: "據德樓",
+      value: '據德樓',
     },
     {
       id: 17,
-      value: "其他",
+      value: '其他',
     },
   ];
   const yearList = [
@@ -110,20 +110,20 @@ const Option = ({ category, dataList, getData }) => {
     },
   ];
   let data = [];
-  if (category == "year") {
+  if (category == 'year') {
     data = yearList;
   }
-  if (category == "position") {
+  if (category == 'position') {
     data = positionList;
   }
 
   let sum = 0;
   for (let i = 0; i < data.length; i++) {
     for (let j = 0; j < dataList.length; j++) {
-      if (category == "position" && data[i].value == dataList[j].position) {
+      if (category == 'position' && data[i].value == dataList[j].position) {
         sum += 1;
       }
-      if (category == "year" && data[i].value == dataList[j].year) {
+      if (category == 'year' && data[i].value == dataList[j].year) {
         sum += 1;
       }
     }
@@ -138,7 +138,7 @@ const Option = ({ category, dataList, getData }) => {
       {list.map((index, id) => (
         <Link
           href={{
-            pathname: "/poem/[id]",
+            pathname: '/poem/[id]',
             query: { id: `${index[0]}` },
           }}
         >
@@ -150,7 +150,7 @@ const Option = ({ category, dataList, getData }) => {
       ))}
       <div
         className={styles.btn}
-        style={list.length < 9 || active ? { display: "none" } : undefined}
+        style={list.length < 9 || active ? { display: 'none' } : undefined}
         onClick={(e) => {
           setActive(true);
           getData(true);
@@ -174,7 +174,7 @@ function useWindowSize() {
 
   useEffect(() => {
     // only execute all the code below in client side
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       // Handler to call on window resize
       function handleResize() {
         // Set window width/height to state
@@ -185,13 +185,13 @@ function useWindowSize() {
       }
 
       // Add event listener
-      window.addEventListener("resize", handleResize);
+      window.addEventListener('resize', handleResize);
 
       // Call handler right away so state gets updated with initial window size
       handleResize();
 
       // Remove event listener on cleanup
-      return () => window.removeEventListener("resize", handleResize);
+      return () => window.removeEventListener('resize', handleResize);
     }
   }, []); // Empty array ensures that effect is only run on mount
   return windowSize;
