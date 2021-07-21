@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './index.module.css';
-//const prefix = '/cgu.github.io';
-const prefix = '';
+const prefix = '/cgu.github.io';
+//const prefix = '';
 export default function Footer() {
   return (
     <footer>

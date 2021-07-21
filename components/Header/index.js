@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import classnames from 'classnames';
 import Link from 'next/link';
 import styles from './index.module.css';
-//const prefix = '/cgu.github.io';
-const prefix = '';
+const prefix = '/cgu.github.io';
+//const prefix = '';
 
 const Header = ({ position }) => {
   const [active, setactive] = useState(false);

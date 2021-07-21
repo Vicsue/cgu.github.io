@@ -1,9 +1,8 @@
-import Layout from "../components/Layout";
-import Container from "../components/Container";
-import styles from "../styles/filter.module.css";
-import Link from "next/link";
-const prefix = "/cgu.github.io";
-import { withRouter } from "next/router";
+import Layout from '../components/Layout';
+import Container from '../components/Container';
+import styles from '../styles/filter.module.css';
+import Link from 'next/link';
+import { withRouter } from 'next/router';
 export default function Content({ router }) {
   return (
     <Layout position="2">
