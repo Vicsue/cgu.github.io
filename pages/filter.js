@@ -2,7 +2,6 @@ import Layout from '../components/Layout';
 import Container from '../components/Container';
 import styles from '../styles/filter.module.css';
 import Link from 'next/link';
-import PrefixedLink from '../components/PrefixedLink';
 export default function Filter() {
   return (
     <Layout position="2">
