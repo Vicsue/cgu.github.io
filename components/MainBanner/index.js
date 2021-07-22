@@ -87,12 +87,12 @@ const MainBanner = () => {
   };
   return (
     <div className={styles.home}>
+      <div className={styles.title}>
+        「臺灣詩•鄉土情」課程<br></br>
+        長庚八景詩及教學影像數位化資料庫
+      </div>
       <div className={styles.MainBanner}>
         <div className={styles.about} id="A">
-          <div className={styles.title}>
-            「臺灣詩•鄉土情」課程<br></br>
-            長庚八景詩及教學影像數位化資料庫
-          </div>
           <div className={styles.quote}>
             承襲古典精神，將長庚寫入傳統。<br></br>
             描繪校園景致，讓學子悠遊詩情。

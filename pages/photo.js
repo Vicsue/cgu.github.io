@@ -73,7 +73,7 @@ export default function Photo() {
     });
   }
   return (
-    <Layout position="2">
+    <Layout position="3">
       <Container>
         <div className={styles.container}>
           <h1 className={styles.title}>請選擇學年度</h1>

@@ -84,7 +84,7 @@ export default function Photo() {
   const [currImg, setCurrImg] = useState(0);
 
   return (
-    <Layout position="2">
+    <Layout position="3">
       <Container>
         <div className={styles.poemContainer}>
           <div className={styles.container}>

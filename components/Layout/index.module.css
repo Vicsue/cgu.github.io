@@ -5,12 +5,16 @@
 }
 
 .con {
-  min-height: calc(100vh - 84px);
+  min-height: calc(100vh - 115px);
 }
 
 @media screen and (max-width: 768px) {
   .nav {
     padding-top: calc(70px);
+  }
+
+  .con {
+    min-height: calc(100vh - 75px);
   }
 }
 
