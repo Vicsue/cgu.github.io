@@ -14,7 +14,7 @@ const MainBanner = () => {
       title: '永慶爺像',
       author: '蔡昕晏',
       position: '創辦人紀念公園',
-      image: '105-30.png',
+      image: '105-30.PNG',
       line1: '墨身懷勁骨，',
       line2: '兀坐睇凝神。',
       line3: '遠矚千年志，',
