@@ -38,12 +38,8 @@ const CustomSlide = ({
             {line4}
           </div>
           <div className={styles.right}>
-            <a href={`/poem/${position}`}>
-              <p>{position}/</p>
-            </a>
-            <a href={`/poem/${year}`}>
-              <p>{year}學年度/</p>
-            </a>
+            <p>{position}/</p>
+            <p>{year}學年度/</p>
             <p>{author}</p>
           </div>
         </div>

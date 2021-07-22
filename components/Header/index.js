@@ -32,7 +32,7 @@ const Header = ({ position }) => {
             <div className={styles.logo}>
               <img src={`${prefix}/static/CGU_Logo.png`} alt="cgu-logo" />
               <hr></hr>
-              <div className={styles.logoText}>校園八景</div>
+              <div className={styles.logoText}>臺灣詩•鄉土情</div>
             </div>
           </Link>
         </div>

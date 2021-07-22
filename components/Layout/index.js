@@ -45,7 +45,7 @@ export default function Layout({ children, position }) {
           crossorigin="anonymous"
         />
 
-        <title>長庚大學 校園八景</title>
+        <title>「臺灣詩•鄉土情」課程 - 長庚八景詩及教學影像數位化資料庫</title>
         <script
           type="text/javascript"
           src="https://platform-api.sharethis.com/js/sharethis.js#property=60865b6aca2f2c001800975f&product=inline-share-buttons"
