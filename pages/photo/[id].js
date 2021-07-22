@@ -102,7 +102,7 @@ export default function Photo() {
                   alt="image"
                   onClick={(e) => {
                     setIsOpen(true);
-                    setCurrImg(id);
+                    setCurrImg(id + 1);
                   }}
                 />
               ))}
