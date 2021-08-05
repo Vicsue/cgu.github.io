@@ -10,68 +10,35 @@ const MainBanner = () => {
   const bannerList = [
     {
       id: 1,
-      year: 105,
-      title: '永慶爺像',
-      author: '蔡昕晏',
-      position: '創辦人紀念公園',
-      image: '105-30.PNG',
-      line1: '墨身懷勁骨，',
-      line2: '兀坐睇凝神。',
-      line3: '遠矚千年志，',
-      line4: '青衿耀北辰。',
-      authorize: true,
+      image: 'banner01.jpg',
     },
     {
       id: 2,
-      year: 108,
-      title: '木棧冬雨',
-      author: '魏敬耘',
-      position: '木棧道',
-      image: '108-93.png ',
-      line1: '冬雷千鏃破，',
-      line2: '冽雨萬針傾。',
-      line3: '浚瀨濺濺瀑，',
-      line4: '孤魚孑孑行。',
-      authorize: true,
+      image: 'banner02.jpg',
     },
     {
       id: 3,
-      year: 102,
-      title: '書齋品文',
-      author: '作者',
-      position: '圖書館',
-      image: '102-1.png',
-      line1: '與蠹爭食天下事，',
-      line2: '伴螢共賞古今談。',
-      line3: '前書猶見黃花瘦，',
-      line4: '隔頁卻聞夏芰殘。',
-      authorize: true,
+      image: 'banner03.jpg',
     },
     {
       id: 4,
-      year: 108,
-      title: '鏤德銘志',
-      author: '翁以柔',
-      position: '明德樓',
-      image: '108-92.png ',
-      line1: '獨樓破際限，',
-      line2: '雨嶺雲溪廊。',
-      line3: '俯瞰紅塵輩，',
-      line4: '雛鷹自此狂。',
-      authorize: true,
+      image: 'banner04.jpg',
     },
     {
       id: 5,
-      year: 107,
-      title: '曉霧晨操',
-      author: '劉虹筠',
-      position: '操場',
-      image: '107-66.png ',
-      line1: '朱龍踞翠藏，',
-      line2: '碧葉點新妝。',
-      line3: '祖逖聞雞舞，',
-      line4: '何憂汗透裳。',
-      authorize: true,
+      image: 'banner05.jpg',
+    },
+    {
+      id: 6,
+      image: 'banner06.jpg',
+    },
+    {
+      id: 7,
+      image: 'banner07.jpg',
+    },
+    {
+      id: 8,
+      image: 'banner08.jpg',
     },
   ];
   const settings = {
@@ -108,18 +75,7 @@ const MainBanner = () => {
         <div className={styles.banner}>
           <Slider {...settings}>
             {bannerList.map((index, id) => (
-              <CustomSlide
-                key={id}
-                year={index.year}
-                image={index.image}
-                title={index.title}
-                author={index.author}
-                position={index.position}
-                line1={index.line1}
-                line2={index.line2}
-                line3={index.line3}
-                line4={index.line4}
-              />
+              <CustomSlide key={id} image={index.image} />
             ))}
           </Slider>
         </div>
